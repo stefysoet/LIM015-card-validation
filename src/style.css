@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('imagenes/fondo.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+footer {
+    background-color: #218380;
+    text-align: center;
+    padding: 7px;
+    color: #fff
+}
+
+
+:focus {
+    outline: none;
+}
+
+
+/* CAJAS */
+
+.caja1 {
+    width: 1050px;
+    height: 48px;
+    margin: 13px auto;
+    border-radius: 8px;
+    padding: 2px;
+    text-align: center;
+    overflow: hidden;
+    font-size: 25px;
+    font-family: 'Century';
+    background: #218380;
+    color: #fff;
+}
+
+.caja2 {
+    width: 1050px;
+    height: 460px;
+    margin: 40px auto;
+    display: flex;     /* para que se ponga a un lado del formulario */
+    border-radius: 10px;     
+    overflow: hidden;     /* para que no se salga del límite */
+    background: #fff;
+    box-shadow: 0px 0px 5px #000000;
+}
+
+
+/* COLUMNA1 */
+
+.columna1::before{     
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #2c2c31e5;
+}
+
+.columna1 {
+    width: 55%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('imagenes/columna1.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.texto {
+    position: relative;
+    color: #ffffff;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Betterfly Christmas';
+}
+
+.informacion {
+    position: relative;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 2px;
+    font-family: 'Aparajita';
+}
+
+
+/* COLUMNA2 */
+
+form.columna2 {
+    width: 45%;
+    padding: 60px 40px;
+}
+
+form.columna2 .formulario {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Love';
+    font-size: 35px;
+}
+
+form.columna2 label {
+    font-weight: 600;
+}
+
+form.columna2 input {
+    width: 100%;
+    padding: 8px 0px 5px;
+    border: none;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #b4b6b4;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 400px;
+}
+
+form.columna2 button[type="button"] {
+    width: 180px;
+    background: #218380;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    align-self: flex-end;     /* posición derecha */
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;    /* cursor utilizado cuando se encuentra sobre enlaces (una mano) */
+}
+
+form.columna2 button[type="button"]:hover {     /* efecto al pasar el mouse */
+    background: #1e555c;
+}
+
+.resultados {
+    background: #23222a;
+    color: #fff;
+    text-align: center;
+    line-height: 200%;
+    font-family: 'calibri';
+    border-radius: 10px;
+    position: absolute;
+    padding: 0 2em;
+    top: 380px;
+    right: 300px;
+}
